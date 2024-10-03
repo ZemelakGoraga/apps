@@ -29,14 +29,7 @@ if st.button("Calculate"):
         result = add(num1, num2)
     elif operation == "Subtract":
         result = subtract(num1, num2)
-    elif operation == "Multiply":
-        result = multiply(num1, num2)
-    elif operation == "Divide":
-        result = divide(num1, num2)
-
-    st.write(f"Result: {result}")
-
-import streamlit as st
+   import streamlit as st
 
 # Define the calculator functions
 def add(x, y):
@@ -54,12 +47,12 @@ def divide(x, y):
 # Streamlit app
 st.title("Simple Calculator")
 
-# Input fields for numbers
-num1 = st.number_input("Enter first number", value=0.0)
-num2 = st.number_input("Enter second number", value=0.0)
+# Input fields for numbers with unique keys
+num1 = st.number_input("Enter first number", value=0.0, key="num1")
+num2 = st.number_input("Enter second number", value=0.0, key="num2")
 
 # Dropdown for operation selection
-operation = st.selectbox("Select operation", ["Add", "Subtract", "Multiply", "Divide"])
+operation = st.selectbox("Select operation", ["Add", "Subtract", "Multiply", "Divide"], key="operation")
 
 # Calculate button
 if st.button("Calculate"):
@@ -73,3 +66,4 @@ if st.button("Calculate"):
         result = divide(num1, num2)
 
     st.write(f"Result: {result}")
+
