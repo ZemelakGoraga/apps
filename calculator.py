@@ -1,4 +1,4 @@
-import streamlit as st
+iimport streamlit as st
 
 # Define the calculator functions
 def add(x, y):
@@ -35,8 +35,7 @@ if st.button("Calculate"):
         result = divide(num1, num2)
 
     st.write(f"Result: {result}")
-~
-~
+
 import streamlit as st
 
 # Define the calculator functions
