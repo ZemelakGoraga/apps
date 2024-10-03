@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 
 # Define the calculator functions
 def add(x, y):
