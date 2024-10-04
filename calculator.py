@@ -29,8 +29,12 @@ if st.button("Calculate"):
         result = add(num1, num2)
     elif operation == "Subtract":
         result = subtract(num1, num2)
+<<<<<<< HEAD
 
 import streamlit as st
+=======
+   import streamlit as st
+>>>>>>> fe6d9576ba806d277fb248f5075d6bf3d617e30a
 
 # Define the calculator functions
 def add(x, y):
